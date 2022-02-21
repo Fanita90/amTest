@@ -1,3 +1,50 @@
-body{
-    background-color: aqua;
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap");
+$font-family: "Open Sans", sans-serif;
+$active-color: #6b63b5;
+$hover-color: rgba(107, 99, 181, 0.6);
+$normal-color: rgba(0, 0, 0, 0.6);
+$font-color: #ffffff;
+
+body {
+  background-image: url(../../assets/backgrounds.png);
+
+  background-image: no-repeat;
+  background-image: fixed;
+  background-image: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+}
+.logo {
+  width: 193.8px;
+  height: 66px;
+}
+.btns-home {
+  display: flex;
+  justify-content: space-evenly;
+  .btn-filter {
+    border: 4px solid $active-color;
+    background: $normal-color;
+    border-radius: 4px;
+    color: $font-color;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 30px;
+
+    text-align: center;
+    letter-spacing: 0.2em;
+    //margin: 5px 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    background-color: #000000;
+    background-image: none;
+  }
 }
