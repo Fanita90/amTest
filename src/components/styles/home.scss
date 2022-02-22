@@ -7,44 +7,63 @@ $font-color: #ffffff;
 
 body {
   background-image: url(../../assets/backgrounds.png);
-
-  background-image: no-repeat;
-  background-image: fixed;
-  background-image: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
-  overflow-x: hidden;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4em;
+  overflow-x: hidden;
+  font-family: $font-family;
+  
 }
 .logo {
-  width: 193.8px;
-  height: 66px;
+ width: 15rem;
+ height: auto;
+  display:block;
+  margin:auto;
+  margin-top: 2rem;
+}
+.indication{
+  color:$font-color;
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  text-align: center;
+  margin-bottom: 2rem;
+
 }
 .btns-home {
   display: flex;
   justify-content: space-evenly;
   .btn-filter {
+    width: 12rem;
+    padding: .8rem 0;
     border: 4px solid $active-color;
     background: $normal-color;
     border-radius: 4px;
     color: $font-color;
-    font-family: $font-family;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    padding: 10px 30px;
-
     text-align: center;
     letter-spacing: 0.2em;
-    //margin: 5px 10px;
+  
   }
+  .btn-filter:hover{
+      background-color: $hover-color;
+  }
+  .btn-filter:active{
+    background-color: $active-color;
+}
 }
 
 @media (max-width: 900px) {
   body {
     background-color: #000000;
     background-image: none;
+  }
+  .btn-filter {
+    width: 10rem !important;
+    //padding: 10px 0;
   }
 }
