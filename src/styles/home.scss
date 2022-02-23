@@ -86,7 +86,11 @@ margin: 3rem auto;
 //background-color: aquamarine;
 
 }
-
+.contenido-modal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @media (max-width: 900px) {
   body {
     background-color: #000000;
