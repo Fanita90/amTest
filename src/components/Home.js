@@ -47,7 +47,7 @@ const Home = () => {
     <>
       <div className="containerHome">
         <section className="btns-fav-add">
-          <header>
+          
             <button className="btn-sticky">
               Favoritos
               <img className="icon-btn" alt="favorite" src={fav} />
@@ -56,7 +56,7 @@ const Home = () => {
               Agregar
               <img className="icon-btn" alt="add" src={add} />
             </button>
-          </header>
+          
         </section>
         <section>
           <img className="logo" alt="logoHome" src={logo1} />
