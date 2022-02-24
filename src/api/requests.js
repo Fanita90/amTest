@@ -16,3 +16,10 @@ export const fetchStudents = () => {
   });
 };
 
+export const fetchNew = () => {
+  return axios({
+    url: "http://localhost:8000/new",
+    //url: "https://prueba-api-harry.herokuapp.com/students",
+    method: "get",
+  });
+};

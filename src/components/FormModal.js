@@ -3,23 +3,33 @@ import "../styles/formModal.scss";
 import axios from "axios";
 
 const FormModal = () => {
-  const url = "http://localhost:8000/staff";
+  const url = "http://localhost:8000/new";
   const [data, setData] = useState({
-    "name": "",
-    "gender": "",
-    "house": "",
-    "dateOfBirth": "",
-    "eyeColour": "",
-    "hairColour": "",
-    "hogwartsStudent": "",
-    "hogwartsStaff": "",
-    "alive": "",
-    "image": "",
+    name: "",
+    gender: "",
+    house: "",
+    dateOfBirth: "",
+    eyeColour: "",
+    hairColour: "",
+    hogwartsStudent: "",
+    hogwartsStaff: "",
+    alive: "",
+    //image: "",
   });
 
-  const submit = (e)=> {
+  function handle({ target }) {
+    setData({
+      ...data,
+      [target.name]: target.value,
+    });
+  }
+
+  const submit = (e) => {
     e.preventDefault();
-    axios.post(url, {setData}
+    axios
+      .post(
+        url,
+        [data]
         //name: data.name,
         //gender: data.gender,
         //house: data.house,
@@ -34,15 +44,9 @@ const FormModal = () => {
       .then((res) => {
         console.log(res.data);
       });
-  }
+    window.location.reload(true);
+  };
 
-  function handle({target}) {
-    setData({
-      ...data,
-      [target.name]:target.value
-    })
-    
-  }
   return (
     <>
       <div className="contenido-modal">
@@ -51,9 +55,10 @@ const FormModal = () => {
             Nombre:
             <input
               type="text"
-              onChange={(e) => handle(e)}
               id="name"
-              value={data.name}
+              name="name"
+              onChange={handle}
+              //value={data.name}
             />
           </label>
           <br></br>
@@ -62,110 +67,107 @@ const FormModal = () => {
             CUMPLEAÑOS:
             <input
               type="text"
-              onChange={(e) => handle(e)}
               id="dateOfBirth"
-              value={data.dateOfBirth}
+              name="dateOfBirth"
+              onChange={handle}
+              //value={data.dateOfBirth}
             />
           </label>
           <br></br>
           <p>GÉNERO</p>
-          <label htmlFor="male">Male</label>
+          <label >Male
           <input
             type="radio"
-            onChange={(e) => handle(e)}
             id="male"
             name="gender"
-            value={data.gender}
+            onChange={handle}
+            value="male"
           />
-
-          <label htmlFor="female">Female</label>
+</label>
+          <label >Female
           <input
             type="radio"
-            onChange={(e) => handle(e)}
             id="female"
             name="gender"
-            value={data.gender}
+            onChange={handle}
+            value="female"
           />
+          </label>
           <br></br>
-          <label htmlFor="eyeColour,s">COLOR DE OJOS:</label>
+          <label htmlFor="eyeColour">COLOR DE OJOS:</label>
           <input
             id="eyeColour"
+            name="eyeColour"
             type="text"
-            onChange={(e) => handle(e)}
-            value={data.eyeColour}
+            onChange={handle}
+            //value={data.eyeColour}
           />
 
           <br></br>
           <label htmlFor="hairColour">COLOR DE PELO:</label>
           <input
             type="text"
-            onChange={(e) => handle(e)}
+            onChange={handle}
             id="hairColour"
-            value={data.hairColour}
+            name="hairColour"
+            //value={data.hairColour}
           />
           <br></br>
           <label htmlFor="house">CASA</label>
-          <select name="select">
-            <option onChange={(e) => handle(e)} value={data.house}>
-              Slytherin
-            </option>
-            <option onChange={(e) => handle(e)} value={data.house}>
-              Ravenclaw
-            </option>
-            <option onChange={(e) => handle(e)} value={data.house}>
-              Hufflepuff
-            </option>
-            <option onChange={(e) => handle(e)} value={data.house}>
-              Gryffindor
-            </option>
+          <select name="house" onChange={handle}>
+            <option value="Slytherin">Slytherin</option>
+            <option value="Revenclaw">Ravenclaw</option>
+            <option value="Hufflepuff">Hufflepuff</option>
+            <option value="Gryffindor">Gryffindor</option>
           </select>
+
           <br></br>
           <p>POSICIÓN</p>
           <label htmlFor="hogwartsStudent">Estudiante</label>
           <input
             type="radio"
-            onChange={(e) => handle(e)}
+            onChange={handle}
             id="hogwartsStudent"
-            name="position"
-            value={data.hogwartsStudent}
+            name="hogwartsStudent"
+            value={true}
           />
 
           <label htmlFor="hogwartsStaff">Staff</label>
           <input
             type="radio"
-            onChange={(e) => handle(e)}
+            onChange={handle}
             id="hogwartsStaff"
-            name="position"
-            value={data.hogwartsStaff}
+            name="hogwartsStaff"
+            value={true}
           />
           <br></br>
           <p>ESTADO</p>
           <label htmlFor="alive">Vivo</label>
           <input
             type="radio"
-            onChange={(e) => handle(e)}
+            onChange={handle}
             id="alive"
-            name="state"
-            value={data.alive}
+            name="alive"
+            value={true}
           />
 
           <label htmlFor="dead">Finado</label>
           <input
             type="radio"
-            onChange={(e) => handle(e)}
+            onChange={handle}
             id="dead"
-            name="state"
-            value={data.alive}
+            name="alive"
+            value={true}
           />
           <br></br>
-          <label htmlFor="image">FOTOGRAFÍA</label>
+          {/*<label htmlFor="image">FOTOGRAFÍA</label>
           <input
             type="file"
             id="image"
             onChange={(e) => handle(e)}
             name="image"
             value={data.image}
-          />
+          />*/}
 
           <button type="submit">Guardar</button>
         </form>
