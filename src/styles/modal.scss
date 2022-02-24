@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap");
+$font-family: "Open Sans", sans-serif;
+
 .modal-background{
     width: 100vw;
     height: 100vh;position: fixed;
@@ -8,6 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: $font-family;
 }
 .modal-container{
     width: 500px;
