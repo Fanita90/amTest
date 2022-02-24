@@ -16,9 +16,3 @@ export const fetchStudents = () => {
   });
 };
 
-export const addStaff = () => {
-  return axios({
-    url: "http://localhost:8000/staff",
-    method: "post",
-  });
-};
