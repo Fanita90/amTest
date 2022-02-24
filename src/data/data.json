@@ -422,18 +422,17 @@
     }
   ],
   "new": [
-    [
-      {
-        "name": "d",
-        "gender": "female",
-        "house": "Revenclaw",
-        "dateOfBirth": "d",
-        "eyeColour": "d",
-        "hairColour": "d",
-        "hogwartsStudent": "true",
-        "hogwartsStaff": "true",
-        "alive": "true"
-      }
-    ]
+    {
+      "name": "f",
+      "gender": "female",
+      "house": "",
+      "dateOfBirth": "12",
+      "eyeColour": "dd",
+      "hairColour": "dd",
+      "hogwartsStudent": "",
+      "hogwartsStaff": "true",
+      "alive": "true",
+      "id": 1
+    }
   ]
 }

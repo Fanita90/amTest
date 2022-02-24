@@ -14,6 +14,7 @@ const Home = () => {
   const [showStudents, setShowStudents] = useState(true);
   const [showStaff, setShowStaff] = useState(true);
   const [showNew, setShowNew] = useState(true);
+
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {

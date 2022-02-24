@@ -3,7 +3,7 @@ import "../styles/formModal.scss";
 import axios from "axios";
 
 const FormModal = () => {
-  const url = "http://localhost:8000/new";
+  const url = "http://localhost:8000/new/";
   const [data, setData] = useState({
     name: "",
     gender: "",
@@ -29,7 +29,7 @@ const FormModal = () => {
     axios
       .post(
         url,
-        [data]
+         data 
         //name: data.name,
         //gender: data.gender,
         //house: data.house,
@@ -75,23 +75,25 @@ const FormModal = () => {
           </label>
           <br></br>
           <p>GÉNERO</p>
-          <label >Male
-          <input
-            type="radio"
-            id="male"
-            name="gender"
-            onChange={handle}
-            value="male"
-          />
-</label>
-          <label >Female
-          <input
-            type="radio"
-            id="female"
-            name="gender"
-            onChange={handle}
-            value="female"
-          />
+          <label>
+            Male
+            <input
+              type="radio"
+              id="male"
+              name="gender"
+              onChange={handle}
+              value="male"
+            />
+          </label>
+          <label>
+            Female
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              onChange={handle}
+              value="female"
+            />
           </label>
           <br></br>
           <label htmlFor="eyeColour">COLOR DE OJOS:</label>
@@ -129,7 +131,7 @@ const FormModal = () => {
             onChange={handle}
             id="hogwartsStudent"
             name="hogwartsStudent"
-            value={true}
+            value="true"
           />
 
           <label htmlFor="hogwartsStaff">Staff</label>
@@ -138,7 +140,7 @@ const FormModal = () => {
             onChange={handle}
             id="hogwartsStaff"
             name="hogwartsStaff"
-            value={true}
+            value="true"
           />
           <br></br>
           <p>ESTADO</p>
@@ -148,7 +150,7 @@ const FormModal = () => {
             onChange={handle}
             id="alive"
             name="alive"
-            value={true}
+            value="true"
           />
 
           <label htmlFor="dead">Finado</label>
@@ -157,7 +159,7 @@ const FormModal = () => {
             onChange={handle}
             id="dead"
             name="alive"
-            value={true}
+            value="true"
           />
           <br></br>
           {/*<label htmlFor="image">FOTOGRAFÍA</label>
