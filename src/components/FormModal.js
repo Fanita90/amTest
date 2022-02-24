@@ -3,49 +3,50 @@ import "../styles/formModal.scss";
 import axios from "axios";
 
 const FormModal = () => {
-  const url = "http://localhost:8000";
+  const url = "http://localhost:8000/staff";
   const [data, setData] = useState({
-    name: "",
-    gender: "",
-    house: "",
-    dateOfBirth: "",
-    eyeColour: "",
-    hairColour: "",
-    hogwartsStudent: "",
-    hogwartsStaff: "",
-    alive: "",
-    image: "",
+    "name": "",
+    "gender": "",
+    "house": "",
+    "dateOfBirth": "",
+    "eyeColour": "",
+    "hairColour": "",
+    "hogwartsStudent": "",
+    "hogwartsStaff": "",
+    "alive": "",
+    "image": "",
   });
 
-  function submit(e) {
+  const submit = (e)=> {
     e.preventDefault();
-    axios.put(url, {
-        name: data.name,
-        gender: data.gender,
-        house: data.house,
-        dateOfBirth: data.dateOfBirth,
-        eyeColour: data.eyeColour,
-        hairColour: data.hairColour,
-        hogwartsStudent: data.hogwartsStudent,
-        hogwartsStaff: data.hogwartsStaff,
-        alive: data.alive,
-        image: data.image,
-      })
+    axios.post(url, {setData}
+        //name: data.name,
+        //gender: data.gender,
+        //house: data.house,
+        //dateOfBirth: data.dateOfBirth,
+        //eyeColour: data.eyeColour,
+        //hairColour: data.hairColour,
+        //hogwartsStudent: data.hogwartsStudent,
+        //hogwartsStaff: data.hogwartsStaff,
+        //alive: data.alive,
+        //image: data.image,
+      )
       .then((res) => {
         console.log(res.data);
       });
   }
 
-  function handle(e) {
-    const newdata = { ...data };
-    newdata[e.target.id] = e.target.value;
-    setData(newdata);
-    console.log(newdata);
+  function handle({target}) {
+    setData({
+      ...data,
+      [target.name]:target.value
+    })
+    
   }
   return (
     <>
       <div className="contenido-modal">
-        <form onSubmit={(e) => submit(e)}>
+        <form onSubmit={submit}>
           <label htmlFor="name">
             Nombre:
             <input
@@ -166,7 +167,7 @@ const FormModal = () => {
             value={data.image}
           />
 
-          <button>Guardar</button>
+          <button type="submit">Guardar</button>
         </form>
       </div>
     </>
