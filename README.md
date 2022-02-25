@@ -38,3 +38,5 @@ Harry Potter Fan es compatible con cualquier computadora y con versiones móvile
 https://prueba-api-harry.herokuapp.com/
 
 ### Liga de app:
+
+https://62187df06247885734a97717--harry-potter-fan-aero.netlify.app/
