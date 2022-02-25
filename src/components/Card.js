@@ -13,7 +13,7 @@ const Card = (props) => {
   // }
 
   const addOrRemoveFavorites = () => {
-    if (favorites.find((favorite) => favorite.name == props.character.name)) {
+    if (favorites.find((favorite) => favorite.name === props.character.name)) {
       dispatch(removeFromFavorites(props.character));
     } else {
       dispatch(addToFavorites(props.character));

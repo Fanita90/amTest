@@ -3,7 +3,7 @@ import "../styles/formModal.scss";
 import axios from "axios";
 
 const FormModal = () => {
-  const url = "http://localhost:8000/new/";
+  const url = "https://prueba-api-harry.herokuapp.com/new";
   const [data, setData] = useState({
     name: "",
     gender: "",
@@ -164,13 +164,13 @@ const FormModal = () => {
           <label className="label-form" htmlFor="image">
             FOTOGRAFÍA
           </label>
-          <input
+          {/*<input
             type="file"
             id="image"
             onChange={(e) => handle(e)}
             name="image"
             value={data.image}
-          />
+          />*/}
           <div className="send">
             <button className="send-btn" type="submit">
               Guardar

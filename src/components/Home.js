@@ -104,6 +104,7 @@ const Home = () => {
             return <Card character={character} />;
           })}
         </div>
+        
         <div className="favorites-container">
           {favorites.map((favorite) => {
             return (

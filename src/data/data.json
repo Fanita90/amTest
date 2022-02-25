@@ -422,6 +422,44 @@
     }
   ],
   "new": [
-   
+    {
+      "name": "d",
+      "gender": "female",
+      "house": "",
+      "dateOfBirth": "d",
+      "eyeColour": "d",
+      "hairColour": "d",
+      "hogwartsStudent": "",
+      "hogwartsStaff": "true",
+      "alive": "true",
+      "image": "",
+      "id": 1
+    },
+    {
+      "name": "Brenin",
+      "gender": "male",
+      "house": "Gryffindor",
+      "dateOfBirth": "13-09-1769",
+      "eyeColour": "azul",
+      "hairColour": "blanco",
+      "hogwartsStudent": "true",
+      "hogwartsStaff": "",
+      "alive": "true",
+      "image": "",
+      "id": 2
+    },
+    {
+      "name": "e",
+      "gender": "female",
+      "house": "Revenclaw",
+      "dateOfBirth": "e",
+      "eyeColour": "e",
+      "hairColour": "e",
+      "hogwartsStudent": "true",
+      "hogwartsStaff": "",
+      "alive": "true",
+      "image": "",
+      "id": 3
+    }
   ]
 }
