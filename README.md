@@ -44,7 +44,7 @@ https://62187df06247885734a97717--harry-potter-fan-aero.netlify.app/
 <p align = "center">
     Vista del Home mostando toda la data en conjunto.
 
-<img width="500" src="https://i.ibb.co/wMh593F/home-d.png" alt="home-d" border="0"> <img width="250" height= "300" src="https://i.ibb.co/5cg72T7/home-m.png" alt="home-m" border="0">
+<img width="500" src="https://i.ibb.co/wMh593F/home-d.png" alt="home-d" border="0"> <img width="200" height= "300" src="https://i.ibb.co/5cg72T7/home-m.png" alt="home-m" border="0">
 
 </p>
 
@@ -63,7 +63,7 @@ Al dar click en el botón Staff, únicamente muesta al staff.
 
 Para agregar a un nuevo estudiante/staff da click en el botón de Agregar, donde se desplegará un modal con los datos a llenar.
 
-<img width="500" src="https://i.ibb.co/N7cCBZq/modal-d.pngg" alt="modal-student" border="0"> <img width="250" height= "300" src="https://i.ibb.co/fDLkzBs/modal-m.png" alt="modal staff" border="0">
+<img width="500" src="https://i.ibb.co/N7cCBZq/modal-d.pngg" alt="modal-student" border="0"> <img width="200" height= "300" src="https://i.ibb.co/fDLkzBs/modal-m.png" alt="modal staff" border="0">
 
 </p >
   
