@@ -8,7 +8,7 @@ function reducer(state = initialState, action) {
     case "ADD_TO_FAVORITES": {
       return {
         ...state,
-        favorites: [...state.favorites, action.payload], // 10
+        favorites: [...state.favorites, action.payload], 
       };
     }
     case "REMOVE_FROM_FAVORITES": {

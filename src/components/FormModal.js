@@ -14,7 +14,7 @@ const FormModal = () => {
     hogwartsStudent: "",
     hogwartsStaff: "",
     alive: "",
-    //image: "",
+    image: "",
   });
 
   function handle({ target }) {
@@ -37,33 +37,31 @@ const FormModal = () => {
       <div className="contenido-modal">
         <form onSubmit={submit}>
           <div className="vertical">
-          <label className="label-form" htmlFor="name">
-            NOMBRE     
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            onChange={handle}
-            className="input-form"
-            //value={data.name}
-          />
+            <label className="label-form" htmlFor="name">
+              NOMBRE
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              onChange={handle}
+              className="input-form"
+            />
           </div>
-         
-<div className="vertical">
-          <label className="label-form" htmlFor="dateOfBirth">
-            CUMPLEAÑOS
-          </label>
-          <input
-            type="text"
-            id="dateOfBirth"
-            name="dateOfBirth"
-            onChange={handle}
-            className="input-form"
-            //value={data.dateOfBirth}
-          />
-</div>
-         
+
+          <div className="vertical">
+            <label className="label-form" htmlFor="dateOfBirth">
+              CUMPLEAÑOS
+            </label>
+            <input
+              type="text"
+              id="dateOfBirth"
+              name="dateOfBirth"
+              onChange={handle}
+              className="input-form"
+            />
+          </div>
+
           <p>GÉNERO</p>
           <label className="label-form">Male</label>
           <input
@@ -72,7 +70,6 @@ const FormModal = () => {
             name="gender"
             onChange={handle}
             value="male"
-            //className="input-form"
           />
 
           <label className="label-form">Female</label>
@@ -82,10 +79,9 @@ const FormModal = () => {
             name="gender"
             onChange={handle}
             value="female"
-            //className="input-form"
           />
 
-         <br/>
+          <br />
           <label className="label-form" htmlFor="eyeColour">
             COLOR DE OJOS
           </label>
@@ -95,10 +91,9 @@ const FormModal = () => {
             type="text"
             onChange={handle}
             className="input-form"
-            //value={data.eyeColour}
           />
 
-<br/>
+          <br />
           <label className="label-form" htmlFor="hairColour">
             COLOR DE PELO
           </label>
@@ -108,20 +103,18 @@ const FormModal = () => {
             id="hairColour"
             name="hairColour"
             className="input-form"
-            //value={data.hairColour}
           />
-          <br/>
+          <br />
           <label className="label-form" htmlFor="house">
             CASA
           </label>
-          <select name="house" onChange={handle} >
+          <select name="house" onChange={handle}>
             <option value="Slytherin">Slytherin</option>
             <option value="Revenclaw">Ravenclaw</option>
             <option value="Hufflepuff">Hufflepuff</option>
             <option value="Gryffindor">Gryffindor</option>
           </select>
 
-          
           <p>POSICIÓN</p>
           <label className="label-form" htmlFor="hogwartsStudent">
             Estudiante
@@ -132,7 +125,6 @@ const FormModal = () => {
             id="hogwartsStudent"
             name="hogwartsStudent"
             value="true"
-            //className="input-form"
           />
 
           <label className="label-form" htmlFor="hogwartsStaff">
@@ -144,9 +136,8 @@ const FormModal = () => {
             id="hogwartsStaff"
             name="hogwartsStaff"
             value="true"
-            //className="input-form"
           />
-          
+
           <p>ESTADO</p>
           <label className="label-form" htmlFor="alive">
             Vivo
@@ -157,7 +148,6 @@ const FormModal = () => {
             id="alive"
             name="alive"
             value="true"
-            //className="input-form"
           />
 
           <label className="label-form" htmlFor="dead">
@@ -169,9 +159,8 @@ const FormModal = () => {
             id="dead"
             name="alive"
             value="true"
-            //className="input-form"
           />
-          <br/>
+          <br />
           <label className="label-form" htmlFor="image">
             FOTOGRAFÍA
           </label>
@@ -181,10 +170,11 @@ const FormModal = () => {
             onChange={(e) => handle(e)}
             name="image"
             value={data.image}
-            //className="input-form"
           />
-<div className="send">
-          <button className="send-btn" type="submit">Guardar</button>
+          <div className="send">
+            <button className="send-btn" type="submit">
+              Guardar
+            </button>
           </div>
         </form>
       </div>

@@ -14,13 +14,12 @@ $font-family: "Open Sans", sans-serif;
   justify-content: center;
   font-family: $font-family;
   overflow-y: hidden;
-
 }
 
 .modal-container {
-    max-height: calc(100vh - 200px);
-    overflow-y: auto;
-    overflow-x: hidden;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  overflow-x: hidden;
 
   width: 500px;
   background-color: #ffffff;
@@ -29,29 +28,27 @@ $font-family: "Open Sans", sans-serif;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 20px;
- 
 }
 .modal-container::-webkit-scrollbar {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 .modal-container::-webkit-scrollbar:vertical {
-    width:10px;
+  width: 10px;
 }
 
-.modal-container::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
-    display: none;
-} 
-
-
+.modal-container::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+  display: none;
+}
 
 .modal-container::-webkit-scrollbar-thumb {
-    background-color: #797979;
-    border-radius: 20px;
-    border: 2px solid #f1f2f3;
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
 }
 .modal-container::-webkit-scrollbar-track {
-    border-radius: 10px;  
+  border-radius: 10px;
 }
 .modal-title {
   display: flex;
@@ -86,16 +83,14 @@ $font-family: "Open Sans", sans-serif;
   .modal-background {
     width: 80vw;
     height: 100vh;
-    
   }
   .modal-container {
     width: 300px;
     max-height: calc(90vh - 200px);
   }
-  
-.modal-title {
+
+  .modal-title {
     margin-bottom: 0px;
     padding-bottom: 0px;
-    
   }
 }

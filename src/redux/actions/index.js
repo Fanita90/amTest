@@ -7,10 +7,6 @@
 //  return { type: "RESTA", payload: 5 };
 //}
 
-//export function multiplicacion(valor) {
-//  return { type: "MULTIPLICACION", payload: 5 };
-//}
-
 export function addToFavorites(character) {
   return { type: "ADD_TO_FAVORITES", payload: character };
 }

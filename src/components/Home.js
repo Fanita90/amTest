@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useSelector} from "react-redux";
-import { suma } from "../redux/actions";
+import { useSelector } from "react-redux";
 
 import "../styles/home.scss";
 import logo1 from "../assets/logo1.png";
@@ -20,12 +19,7 @@ const Home = () => {
   const [showModal, setShowModal] = useState(false);
 
   const total = useSelector((store) => store.total);
-  const favorites = useSelector((store) => store.favorites)
-  // const dispatch = useDispatch();
-
-  // const ejecutaSuma = () => {
-  //   dispatch({ type: "RESTA", payload: 1 });
-  // };
+  const favorites = useSelector((store) => store.favorites);
 
   useEffect(() => {
     fetchData();
@@ -64,12 +58,8 @@ const Home = () => {
     }
   };
 
-
-
   return (
     <>
-      {/* <h1>Total: {total}</h1>
-      <button onClick={ejecutaSuma}>Suma</button> */}
       <div className="containerHome">
         <section className="btns-fav-add">
           <button className="btn-sticky">
@@ -115,8 +105,15 @@ const Home = () => {
           })}
         </div>
         <div className="favorites-container">
-          {favorites.map(favorite => {
-            return <div>{favorite.name}</div>
+          {favorites.map((favorite) => {
+            return (
+              <div>
+                <p>
+                  {favorite.name}
+                  <img className="fav-select" alt="favorite" src={fav} />
+                </p>
+              </div>
+            );
           })}
         </div>
 

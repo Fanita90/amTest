@@ -80,11 +80,32 @@ body {
     background-color: $active-color;
   }
 }
-.container-cards{
-width: 80%;
-margin: 3rem auto;
-//background-color: aquamarine;
+.container-cards {
+  width: 80%;
+  height: 10%;
+  margin: 3rem auto;
+  //background-color: aquamarine;
+}
 
+.favorites-container {
+  width: 30rem;
+  height: auto;
+  display: block;
+  margin: auto;
+  color: $font-color;
+  background-color: $active-color;
+  p{
+    padding: 1rem;
+    text-align: center;
+    
+    
+  }
+  .fav-select{
+    width: 1rem;
+    padding-left: 1rem;
+   
+  }
+  
 }
 
 @media (max-width: 900px) {
@@ -98,22 +119,24 @@ margin: 3rem auto;
 
   .btns-fav-add {
     position: fixed;
-  top: 95%;
-  margin-left: 10%;
-z-index: 1;
-  .btn-sticky {
-    
-    width: 10rem;
-    font-size: 14px;
-    padding: 1rem;
-    border: none;
+    top: 95%;
+    margin-left: 10%;
+    z-index: 1;
+    .btn-sticky {
+      width: 10rem;
+      font-size: 14px;
+      padding: 1rem;
+      border: none;
+    }
   }
-    
-  }
-  .container-cards{
+  .container-cards {
     width: 100%;
     margin: 3rem auto;
+  }
+  .favorites-container {
+    width: 20rem;
+    margin-bottom: 5rem;
     
-    }
-   
+    
+  }
 }
