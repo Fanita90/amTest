@@ -75,23 +75,28 @@ Para agregar a un nuevo estudiante/staff da click en el botón de Agregar, donde
     
   <img width="300" src="https://i.ibb.co/34QRvgC/fav-d.png" alt="fav" border="0"><img width="300" src="https://i.ibb.co/34rx9NQ/fav-m.png" alt="fav" border="0">
 
-  Para eliminar de favoritos, basta con volver a darle click al icono de favoritos en cada tarjeta.abs
+  Para eliminar de favoritos, basta con volver a darle click al icono de favoritos en cada tarjeta.
   
 </p>
+
+
 <p>
 
 • ¿Qué es lo que más te gustó de tu desarrollo?
+
     Me gusta ver hasta donde puedo llegar, el descubrir nuevas tecnologías he irlas implementando, realmente 
     fue un verdadero reto. 
     Me gustó mucho maquetar mi app y conocer más de Harry Potter :) .
 
 • Si hubieras tenido más tiempo ¿Qué hubieras mejorado o qué más hubieras
 hecho?
+
     Sin duda alguna los test, mejorar la parte de redux y el diseño, ya que por falta de experiencia con redux, 
     no logré apegarme al 100% al prototipo de alta fidelidad.
 
 • Descríbenos un pain point o bug con el que te hayas encontrado y como lo
 solucionaste
+
     El poco conocimiento en redux, hizo que me enfocara varias horas a practicar y estudiar a cerca del tema
     para ir entendiéndolo un poco mejor.
 </p>
