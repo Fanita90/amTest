@@ -68,7 +68,11 @@ Para agregar a un nuevo estudiante/staff da click en el botón de Agregar, donde
 </p >
   
 <p align = "center">
-    Para agregar a favoritos, da click en el botón superior derecho de las tarjetas, y se mostrarán en la parte inferior de la pantalla.
-    <img width="300" src="https://i.ibb.co/34QRvgC/fav-d.png" alt="fav" border="0">
-    <img width="300" src="https://i.ibb.co/34rx9NQ/fav-m.png" alt="fav" border="0">
+
+  Para agregar a favoritos, da click en el botón superior derecho de las tarjetas, y se mostrarán en la parte inferior de la pantalla.
+
+
+    
+  <img width="300" src="https://i.ibb.co/34QRvgC/fav-d.png" alt="fav" border="0">
+  <img width="300" src="https://i.ibb.co/34rx9NQ/fav-m.png" alt="fav" border="0">
 </p>
