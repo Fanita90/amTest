@@ -73,6 +73,8 @@ Para agregar a un nuevo estudiante/staff da click en el botón de Agregar, donde
 
 
     
-  <img width="300" src="https://i.ibb.co/34QRvgC/fav-d.png" alt="fav" border="0">
-  <img width="300" src="https://i.ibb.co/34rx9NQ/fav-m.png" alt="fav" border="0">
+  <img width="300" src="https://i.ibb.co/34QRvgC/fav-d.png" alt="fav" border="0"><img width="300" src="https://i.ibb.co/34rx9NQ/fav-m.png" alt="fav" border="0">
+
+  Para eliminar de favoritos, basta con volver a darle click al icono de favoritos en cada tarjeta.abs
+  
 </p>
