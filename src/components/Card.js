@@ -1,8 +1,25 @@
 import React from "react";
 import fav2 from "../assets/fav2.png";
 import "../styles/card.scss";
+import { useDispatch, useSelector } from "react-redux";
+import { addToFavorites, removeFromFavorites } from "../redux/actions";
 
 const Card = (props) => {
+  const favorites = useSelector((state) => state.favorites);
+  const dispatch = useDispatch();
+
+  // const addFavorites=()=>{
+  //   dispatch(addToFavorites(props.character))
+  // }
+
+  const addOrRemoveFavorites = () => {
+    if (favorites.find((favorite) => favorite.name == props.character.name)) {
+      dispatch(removeFromFavorites(props.character));
+    } else {
+      dispatch(addToFavorites(props.character));
+    }
+  };
+
   return (
     <div className="allCards">
       <div className="card">
@@ -16,9 +33,14 @@ const Card = (props) => {
 
         <div className="card-info">
           <h5>
-            {props.character.alive === true ? "VIVO " : "DIFUNTO "} / 
+            {props.character.alive === true ? "VIVO " : "DIFUNTO "} /
             {props.character.hogwartsStudent === true ? "ESTUDIANTE" : "STAFF"}
-            <img className="icon-btn" alt="favorite" src={fav2} />
+            <img
+              className="icon-btn"
+              alt="favorite"
+              src={fav2}
+              onClick={addOrRemoveFavorites}
+            />
           </h5>
 
           <h4>

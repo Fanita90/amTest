@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
+import { useSelector} from "react-redux";
+import { suma } from "../redux/actions";
+
 import "../styles/home.scss";
 import logo1 from "../assets/logo1.png";
 import fav from "../assets/fav.png";
 import add from "../assets/add.png";
-import { fetchStaff, fetchStudents ,fetchNew} from "../api/requests";
+import { fetchStaff, fetchStudents, fetchNew } from "../api/requests";
 import Card from "./Card";
 import Modal from "./Modal";
 import FormModal from "./FormModal";
-
 
 const Home = () => {
   const [characters, setCharacters] = useState([]);
@@ -17,6 +19,14 @@ const Home = () => {
 
   const [showModal, setShowModal] = useState(false);
 
+  const total = useSelector((store) => store.total);
+  const favorites = useSelector((store) => store.favorites)
+  // const dispatch = useDispatch();
+
+  // const ejecutaSuma = () => {
+  //   dispatch({ type: "RESTA", payload: 1 });
+  // };
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -25,17 +35,21 @@ const Home = () => {
     try {
       const resultStaff = await fetchStaff();
       const resultStudents = await fetchStudents();
-      const resultNew=await fetchNew();
+      const resultNew = await fetchNew();
       // setStuents(resultStudents.data)
       // setStaff(resultStaff.data)
-      setCharacters([...resultStaff.data, ...resultStudents.data,...resultNew.data]);
+      setCharacters([
+        ...resultStaff.data,
+        ...resultStudents.data,
+        ...resultNew.data,
+      ]);
     } catch (err) {
       console.log("error");
     }
   };
 
   const filter = () => {
-    if (showStudents === true && showStaff === true && showNew ===true) {
+    if (showStudents === true && showStaff === true && showNew === true) {
       return characters;
     } else {
       const show = characters.filter((item) => {
@@ -50,8 +64,12 @@ const Home = () => {
     }
   };
 
+
+
   return (
     <>
+      {/* <h1>Total: {total}</h1>
+      <button onClick={ejecutaSuma}>Suma</button> */}
       <div className="containerHome">
         <section className="btns-fav-add">
           <button className="btn-sticky">
@@ -96,9 +114,14 @@ const Home = () => {
             return <Card character={character} />;
           })}
         </div>
+        <div className="favorites-container">
+          {favorites.map(favorite => {
+            return <div>{favorite.name}</div>
+          })}
+        </div>
 
-        <Modal state={showModal} changeState={setShowModal} >
-          <FormModal/>
+        <Modal state={showModal} changeState={setShowModal}>
+          <FormModal />
         </Modal>
       </div>
     </>
