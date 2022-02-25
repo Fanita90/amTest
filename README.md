@@ -44,16 +44,16 @@ https://62187df06247885734a97717--harry-potter-fan-aero.netlify.app/
 <p align = "center">
     Vista del Home mostando toda la data en conjunto.
 
-<img width="500" src="https://i.ibb.co/wMh593F/home-d.png" alt="home-d" border="0"> <img width="300" src="https://i.ibb.co/5cg72T7/home-m.png" alt="home-m" border="0">
+<img width="500" src="https://i.ibb.co/wMh593F/home-d.png" alt="home-d" border="0"> <img width="300" height= "150" src="https://i.ibb.co/5cg72T7/home-m.png" alt="home-m" border="0">
 
 </p>
 
 <p align = "center">
     Al dar click en el botón Estudiantes, únicamente muestra a los estudiantes
 
-<img width="500" src="https://i.ibb.co/G3gnc1C/btn-student.png" alt="btn-student" border="0">
+<img width="500"   hei src="https://i.ibb.co/G3gnc1C/btn-student.png" alt="btn-student" border="0">
 
-    Al dar click en el botón Staff, únicamente muesta al staff.
+Al dar click en el botón Staff, únicamente muesta al staff.
 
 <img width="500" src="https://i.ibb.co/S5FPhgf/btn-staff.png" alt="btn-staff" border="0">
 
@@ -63,12 +63,12 @@ https://62187df06247885734a97717--harry-potter-fan-aero.netlify.app/
 
 Para agregar a un nuevo estudiante/staff da click en el botón de Agregar, donde se desplegará un modal con los datos a llenar.
 
-<img width="500" src="https://i.ibb.co/N7cCBZq/modal-d.pngg" alt="modal-student" border="0"> <img width="300" src="https://i.ibb.co/fDLkzBs/modal-m.png" alt="modal staff" border="0">
+<img width="500" src="https://i.ibb.co/N7cCBZq/modal-d.pngg" alt="modal-student" border="0"> <img width="300" height= "150" src="https://i.ibb.co/fDLkzBs/modal-m.png" alt="modal staff" border="0">
 
 </p >
   
 <p align = "center">
     Para agregar a favoritos, da click en el botón superior derecho de las tarjetas, y se mostrarán en la parte inferior de la pantalla.
-    <img width="500" src="https://i.ibb.co/34QRvgC/fav-d.png" alt="fav" border="0">
+    <img width="300" src="https://i.ibb.co/34QRvgC/fav-d.png" alt="fav" border="0">
     <img width="300" src="https://i.ibb.co/34rx9NQ/fav-m.png" alt="fav" border="0">
 </p>
