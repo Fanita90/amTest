@@ -63,24 +63,25 @@ const FormModal = () => {
           </div>
 
           <p>GÉNERO</p>
-          <label className="label-form">Male</label>
-          <input
-            type="radio"
-            id="male"
-            name="gender"
-            onChange={handle}
-            value="male"
-          />
+          <div className="radio-btn">
+            <label className="label-form">Male</label>
+            <input
+              type="radio"
+              id="male"
+              name="gender"
+              onChange={handle}
+              value="male"
+            />
 
-          <label className="label-form">Female</label>
-          <input
-            type="radio"
-            id="female"
-            name="gender"
-            onChange={handle}
-            value="female"
-          />
-
+            <label className="label-form">Female</label>
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              onChange={handle}
+              value="female"
+            />
+          </div>
           <br />
           <label className="label-form" htmlFor="eyeColour">
             COLOR DE OJOS
@@ -116,50 +117,54 @@ const FormModal = () => {
           </select>
 
           <p>POSICIÓN</p>
-          <label className="label-form" htmlFor="hogwartsStudent">
-            Estudiante
-          </label>
-          <input
-            type="radio"
-            onChange={handle}
-            id="hogwartsStudent"
-            name="hogwartsStudent"
-            value="true"
-          />
+          <div className="radio-btn">
+            <label className="label-form" htmlFor="hogwartsStudent">
+              Estudiante
+            </label>
+            <input
+              type="radio"
+              onChange={handle}
+              id="hogwartsStudent"
+              name="hogwartsStudent"
+              value="true"
+            />
 
-          <label className="label-form" htmlFor="hogwartsStaff">
-            Staff
-          </label>
-          <input
-            type="radio"
-            onChange={handle}
-            id="hogwartsStaff"
-            name="hogwartsStaff"
-            value="true"
-          />
-
+            <label className="label-form" htmlFor="hogwartsStaff">
+              Staff
+            </label>
+            <input
+              type="radio"
+              onChange={handle}
+              id="hogwartsStaff"
+              name="hogwartsStaff"
+              value="true"
+            />
+          </div>
           <p>ESTADO</p>
-          <label className="label-form" htmlFor="alive">
-            Vivo
-          </label>
-          <input
-            type="radio"
-            onChange={handle}
-            id="alive"
-            name="alive"
-            value="true"
-          />
+          <div className="radio-btn">
+            <label className="label-form" htmlFor="alive">
+              Vivo
+            </label>
+            <input
+              type="radio"
+              onChange={handle}
+              id="alive"
+              name="alive"
+              value="true"
+            />
 
-          <label className="label-form" htmlFor="dead">
-            Finado
-          </label>
-          <input
-            type="radio"
-            onChange={handle}
-            id="dead"
-            name="alive"
-            value="true"
-          />
+            <label className="label-form" htmlFor="dead">
+              Finado
+            </label>
+            <input
+              type="radio"
+              onChange={handle}
+              id="dead"
+              name="alive"
+              value="true"
+            />
+          </div>
+          <br />
           <br />
           <label className="label-form" htmlFor="image">
             FOTOGRAFÍA

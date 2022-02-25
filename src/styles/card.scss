@@ -33,8 +33,13 @@ $font-color: #081f32;
     height: 200px;
     background-color: azure;
     border-radius: 0% 8% 8% 0%;
-    .icon-btn {
+    .favorite-img {
       width: 1rem;
+      margin-left: 1rem;
+    }
+    .favorite-img:hover {
+      width: 1.3rem;
+      filter: drop-shadow(0 1px 5px rgba(0, 0, 0, 0.7));
     }
     p {
       font-size: 14px;

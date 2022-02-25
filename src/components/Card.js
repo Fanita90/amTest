@@ -36,7 +36,7 @@ const Card = (props) => {
             {props.character.alive === true ? "VIVO " : "DIFUNTO "} /
             {props.character.hogwartsStudent === true ? "ESTUDIANTE" : "STAFF"}
             <img
-              className="icon-btn"
+              className="favorite-img"
               alt="favorite"
               src={fav2}
               onClick={addOrRemoveFavorites}
