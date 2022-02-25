@@ -11,7 +11,7 @@ const Modal = ({ children, state, changeState }) => {
             <div className="modal-title">
               <h1>Agrega un personaje</h1>
             </div>
-            <button className="close-btn" onClick={()=> changeState(false)}> <img className="icon-btn-cerrar" alt="add" src={cerrar} /></button>
+            <button className="close-btn" onClick={()=> changeState(false)}> <img className="icon-btn-close" alt="close" src={cerrar} /></button>
             {children}
           </div>
         </div>

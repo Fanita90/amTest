@@ -422,17 +422,6 @@
     }
   ],
   "new": [
-    {
-      "name": "f",
-      "gender": "female",
-      "house": "",
-      "dateOfBirth": "12",
-      "eyeColour": "dd",
-      "hairColour": "dd",
-      "hogwartsStudent": "",
-      "hogwartsStaff": "true",
-      "alive": "true",
-      "id": 1
-    }
+   
   ]
 }
